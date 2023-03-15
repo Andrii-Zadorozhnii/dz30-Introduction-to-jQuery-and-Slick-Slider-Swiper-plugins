@@ -1,0 +1,128 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.slider__content {
+    max-width: 380px;
+    width: 100%;
+    z-index: 1;
+    max-height: 212px;
+    height: 100%;
+    margin-right: 100px;
+    margin-top: 120px;
+
+    &-text {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F8F1EA;
+        margin-bottom: 50px;
+    }
+
+    &-button {
+        padding: 15px 57px;
+        border: 2px solid #F8F1EA;
+        background: inherit;
+        color: #F8F1EA;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 227px;
+        height: 52px;
+
+        &:hover {
+            background: #F16A50;
+            border: 2px solid #F16A50;
+            transition: 0.4s;
+        }
+    }
+}
+
+.main__slider-content{
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg1 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%), url("../images/slider-content/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%), url("../images/slider-content/image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%),url("../images/slider-content/image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button:hover {
+    cursor: url("../imagescursor.svg");
+}
