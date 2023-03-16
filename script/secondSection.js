@@ -1,5 +1,5 @@
 let guitars = [{
-        "picture": src + "/images/guitar1.jpg",
+        "picture": src("/images/guitar1.jpg"),
         "name": "Hagstrom Alvar Limited Edition",
         "price": "€2.990,00",
         "inStock": true
