@@ -1,5 +1,6 @@
 .main__slider-guitar {
     padding: 0px 40px;
+
     &_header {
         font-weight: 700;
         font-size: 32px;
@@ -15,6 +16,7 @@
     max-height: 440px;
     height: 100%;
     padding: 0px 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -89,6 +91,7 @@
     border-right: 2px solid black;
     transform: rotate(45deg);
 }
+
 .swiper-button-prev {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
@@ -97,7 +100,28 @@
 }
 
 
+.new-button {
+    padding: 15px 57px;
+    border: 2px solid black;
+    background: inherit;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: 227px;
+    height: 52px;
+    margin: 0 auto 70px;
+    display: block;
 
+    &:hover {
+        background: #F16A50;
+        border: 2px solid #F16A50;
+        transition: 0.4s;
+        color: white;
+    }
+
+}
 
 
 

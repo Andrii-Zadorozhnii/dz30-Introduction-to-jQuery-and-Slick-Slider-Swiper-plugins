@@ -1,5 +1,5 @@
 let guitars = [{
-        "picture": "./images/guitars/guitar-2.jpg",
+        "picture": "./images/guitars/guitar-1.jpg",
         "name": "Hagstrom Alvar Limited Edition",
         "price": "€2.990,00",
         "inStock": true
@@ -109,6 +109,11 @@ swiperButtonNext.classList.add("swiper-button-next");
 let swiperButtonPrev = document.createElement("div");
 swiperButtonPrev.classList.add("swiper-button-prev");
 
+let newButton = document.createElement("button");
+newButton.classList.add("new-button");
+newButton.innerHTML = "view more";
+
+
 
 
 // create element for slider
@@ -138,7 +143,7 @@ for (let i = 0; i < guitars.length; i++) {
     swiperSliderInStock.classList.add("swiper-slide-inStock");
     swiperSliderInStock.innerHTML = guitars[i].inStock ? "IN STOCK" : "SOLD";
     swiperSliderInStock.innerHTML = guitars[i].inStock ? "IN STOCK" : "SOLD";
-    swiperSliderInStock.style.backgroundColor = guitars[i].inStock ? "#F16A50" : "#F8F1EA";
+    swiperSliderInStock.style.headekgroundColor = guitars[i].inStock ? "#F16A50" : "#F8F1EA";
     swiperSliderInStock.style.color = guitars[i].inStock ? "#F8F1EA" : "black";
 
 
@@ -157,6 +162,7 @@ guitarHeader.classList.add("main__slider-guitar_header");
 // Append elements to DOM
 guitarSlider.appendChild(guitarHeader);
 guitarSlider.appendChild(swiperWindow);
+guitarSlider.appendChild(newButton);
 swiperWindow.appendChild(swiperWrapper);
 swiperWindow.appendChild(swiperButtonPrev);
 swiperWindow.appendChild(swiperButtonNext);
